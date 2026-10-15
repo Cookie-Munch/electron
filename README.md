@@ -50,7 +50,7 @@ import { createConsentManager, registerConsentIpc } from '@cookiemunch/electron'
 
 const consent = createConsentManager({
   cbid: 'YOUR_SITE_ID',              // your Cookie Munch site id
-  apiUrl: 'https://cmp.example.com', // omit to disable ledger sync
+  apiUrl: 'https://api.cookiemunch.net', // omit to disable ledger sync
   region: 'gb',
   // store defaults to electronSafeStore() (safeStorage-encrypted, userData dir)
 });
@@ -145,7 +145,7 @@ The full typed Developer API client is re-exported for desktop dashboards:
 ```ts
 import { createCookieMunch } from '@cookiemunch/electron';
 
-const cm = createCookieMunch({ apiKey: 'fck_…', baseUrl: 'https://cmp.example.com' });
+const cm = createCookieMunch({ apiKey: 'fck_…', baseUrl: 'https://api.cookiemunch.net' });
 const stats = await cm.consent.stats('YOUR_SITE_ID');
 ```
 

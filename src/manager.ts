@@ -16,7 +16,7 @@ import type { Choices, ConsentCategory, ConsentState } from './types.js';
 export interface ConsentManagerOptions {
   /** The Cookie Munch site id (cbid) this desktop app reports under. */
   cbid: string;
-  /** API origin for the ledger, e.g. "https://cmp.example.com". Omit to disable sync. */
+  /** API origin for the ledger, "https://api.cookiemunch.net". Omit to disable sync. */
   apiUrl?: string;
   /** A custom API client. Overrides `apiUrl`. Injectable for tests. */
   client?: ConsentApiClient;
