@@ -21,7 +21,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@cookiemunch/sdk": "^0.0.0"
+    "@cookiemunch/sdk": "^0.2.0"
   },
   "peerDependencies": {
     "electron": ">=25"
@@ -30,5 +30,15 @@
     "electron": {
       "optional": true
     }
+  },
+  "devDependencies": {
+    "@types/node": "22.20.0",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "vitest": "2.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cookie-Munch/electron.git"
   }
 }
