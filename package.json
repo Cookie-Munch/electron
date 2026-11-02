@@ -21,7 +21,7 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@cookiemunch/sdk": "^0.13.1"
+    "@cookiemunch/sdk": "^0.13.2"
   },
   "peerDependencies": {
     "electron": ">=25"
