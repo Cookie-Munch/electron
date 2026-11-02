@@ -17,11 +17,11 @@
     "README.md"
   ],
   "scripts": {
-    "build": "tsup",
+    "build": "tsup && tsc -p tsconfig.json --emitDeclarationOnly --declaration",
     "test": "vitest run"
   },
   "dependencies": {
-    "@cookiemunch/sdk": "^0.6.0"
+    "@cookiemunch/sdk": "^0.10.0"
   },
   "peerDependencies": {
     "electron": ">=25"
